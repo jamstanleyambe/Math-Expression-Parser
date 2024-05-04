@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expression Parser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Math Expression Parser</h1>
+    <form action="/parse" method="post">
+        <input type="text" name="expression" placeholder="Enter a mathematical expression">
+        <button type="submit">Parse</button>
+    </form>
+</body>
+</html>
